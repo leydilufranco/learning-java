@@ -1,6 +1,5 @@
 package com.learning.basics.practice;
 
-import java.sql.SQLOutput;
 
 public class InformationBMI {
 
@@ -16,24 +15,24 @@ public class InformationBMI {
         this.height = height;
     }
 
-    public void calculateBMI(){
+    public void calculateBMI() {
 
-        result = weight / (height*height);
+        result = weight / (height * height) ;
 
-        if (result < 18.5){
+        if (result <= 18.5) {
 
-            System.out.println( "Your BMI is Underweight " + result);
-        } else if (result >= 18.5 && result <= 24.9) {
+            System.out.println("Your BMI is Underweight " + result);
+        } else if (result > 18.5 && result <= 24.9) {
 
-            System.out.println("your BMI is Normal weight " +result);
+            System.out.println("your BMI is Normal weight " + result);
 
 
-        } else if (result >= 25.0 && result <= 29.0 ) {
+        } else if (result >= 25.0 && result <= 29.0) {
 
-            System.out.println(" Your BMI is Overweight " +result );
+            System.out.println(" Your BMI is Overweight " + result);
 
         } else if (result >= 30.0) {
-
+            System.out.println( " your BMI is Obesity " +result);
 
         }
     }

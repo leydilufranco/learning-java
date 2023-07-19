@@ -6,7 +6,7 @@ public class MainBMI {
         InformationBMI bmi = new InformationBMI();
 
         bmi.setWeight(84.9);
-        bmi.setWeight(1.78);
+        bmi.setHeight(1.78);
         bmi.calculateBMI();
 
     }
